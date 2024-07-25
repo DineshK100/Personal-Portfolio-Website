@@ -1,31 +1,47 @@
+.nav-background{
+    height: 0px;
+}
 .navbar {
-    height: 5rem;
     width: 100vw;
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between to position children correctly */
-    position: sticky;
-    top: 0;
+    justify-content: space-between;
+    position: fixed;
     z-index: 3;
-    background-color: #1b1b1b; /* Dark background color */
-    border-top: 3px solid; /* Border on top */
+    opacity: 100%;
+    border-top: 3px solid;
     border-image-source: linear-gradient(to right, #00ff94, #00dfff, #e361ff);
     border-image-slice: 1;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.navbar-scrolled {
+    background-color: black !important;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+ }
+
+
+.name {
+    color: aquamarine;
+    font-size: 1.5rem;
+    align-items: left;
 }
 
 .navbar-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribute space between children */
+    justify-content: space-between;
     width: 100%;
 }
 
 .desktopmenu {
     display: flex;
     gap: 1rem;
-    margin: 0 auto; /* Center the menu */
+    margin: 0 auto;
 }
 
 .desktopMenuListItem {
@@ -34,9 +50,10 @@
     align-items: center;
     justify-content: center;
     color: white;
-    text-decoration: none; /* Remove underline */
-    position: relative; /* Needed for ::after positioning */
-    transition: color 0.3s ease; /* Smooth color transition */
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
 }
 
 .desktopMenuListItem::after {
@@ -44,7 +61,7 @@
     position: absolute;
     width: 0%;
     height: 3px;
-    bottom: -2px; /* Position it slightly below the text */
+    bottom: -2px;
     left: 50%;
     background-color: aquamarine;
     transition: all 0.3s ease;
@@ -57,42 +74,4 @@
 
 .desktopMenuListItem:hover::after {
     width: 100%;
-}
-
-
-.desktopMenubtn {
-    background: none;
-    border: 2px solid aquamarine; /* Add border to the button */
-    color: aquamarine; /* Set initial text color */
-    cursor: pointer;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 1rem; /* Add padding to the button */
-    transition: all 0.3s ease; /* Add transition for smooth effect */
-    position: relative;
-    overflow: hidden; /* Ensure pseudo-element stays within the button */
-    border-radius: 5px; /* Optional: add rounded corners */
-}
-
-.desktopMenubtn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: aquamarine;
-    transition: all 0.3s ease;
-    transform: scaleX(0);
-    transform-origin: left;
-    z-index: -1; /* Place it behind the button text */
-}
-
-.desktopMenubtn:hover::before {
-    transform: scaleX(1);
-}
-
-.desktopMenubtn:hover {
-    color: #1b1b1b; /* Change text color on hover */
 }
