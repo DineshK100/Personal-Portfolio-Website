@@ -1,0 +1,81 @@
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-left: 250px;
+    background: none;
+    background-color: none;
+}
+
+.introInfo {
+    text-align: left;
+    color: #ccd6f6; 
+}
+
+.hi {
+    color: #64ffda;
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: block;
+}
+
+.introName {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #ccd6f6;
+    margin: 0;
+}
+
+.introTagline {
+    font-size: 6rem;
+    font-weight: 600;
+    color: #8892b0;
+    margin: 0;
+}
+
+.introDescription {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #8892b0;
+    max-width: 540px;
+    margin-top: 1rem;
+}
+
+.introButton {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 1.75rem;
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.introButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #64ffda;
+    z-index: -1;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.introButton:hover::before {
+    transform: scaleX(1);
+}
+
+.introButton:hover {
+    color: #0a192f;
+    border-color: transparent; 
+}
