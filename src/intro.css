@@ -1,25 +1,22 @@
 .page-background {
     background-color: #000117;
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 50px;
 }
 
 .intro-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 150px;
 }
 
 .intro {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     padding-left: 50px;
-    padding-top: 150px;
-}
-
-.introInfo {
-    text-align: left;
-    color: #ccd6f6; 
 }
 
 .hi {
@@ -31,57 +28,80 @@
 
 .introName {
     font-size: 5rem;
-    font-weight: 700;
     color: #ccd6f6;
     margin: 0;
 }
 
 .introTagline {
     font-size: 5.6rem;
-    font-weight: 600;
     color: #8892b0;
     margin: 0;
-    width: 1000%;
-    height: 20%;
+}
+
+.motivational-quote {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+    color: #ccd6f6;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 215px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 5%
+}
+
+.buttons-display {
+    background: linear-gradient(to right, #009f70, #00bfcf);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.image-1, .image-2, .image-3, .image-4 {
+    position: absolute;
+    border-radius: 50%;
+    filter: brightness(75%);
 }
 
 .image-1 {
-    position: flex;
-    border-radius: 50%;
     width: 15%;
-    height: 15%;
-    margin-top: 5%;
-    filter: brightness(75%);
+    height: auto;
+    right: 25%;
+    top: -45%;
 }
 
 .image-2 {
-    position: relative;
-    border-radius: 50%;
     width: 10%;
-    height: 10%;
-    margin-top: 20%;
-    margin-left: 2%;
-    filter: brightness(75%);
+    height: auto;
+    right: 10%;
+    top: -50%;
 }
 
 .image-3 {
-    position: relative;
-    border-radius: 50%;
     width: 8%;
-    height: 8%;
-    margin-top: 150px;
-    margin-left: -2%;
-    filter: brightness(75%);
+    height: auto;
+    top: 30%;
+    right: 3%;
 }
 
 .image-4 {
-    position: relative;
-    border-radius: 50%;
-    width: 10%;
-    height: 10%;
-    margin-top: 375px;
-    margin-right: 10px;
-    filter: brightness(75%);
+    width: 8%;
+    height: auto;
+    top: 65%;
+    right: 15%;
 }
 
 .image-1::before, .image-2::before, .image-3::before, .image-4::before {
@@ -96,7 +116,7 @@
     z-index: -1;
 }
 
-.image-1::after, .image-2::after, .image-3::after, .image-4::after{
+.image-1::after, .image-2::after, .image-3::after, .image-4::after {
     content: "";
     position: absolute;
     top: -5px; 
@@ -106,7 +126,7 @@
     border-radius: 50%;
     background: linear-gradient(to right, #00ff94, #00dfff, #e361ff);
     z-index: -1;
-    filter: blur(20px)
+    filter: blur(20px);
 }
 
 .image-1 img, .image-2 img, .image-3 img, .image-4 img {
@@ -114,4 +134,49 @@
     height: 100%;
     border-radius: 50%;
     display: block;
+}
+
+/* Hide images on tablets and phones */
+@media (max-width: 600px) {
+    .image-1, .image-2, .image-3, .image-4 {
+        display: none;
+    }
+    .introTagline {
+        font-size: 1.6rem;
+        color: #8892b0;
+    }
+
+    .hi {
+        color: #64ffda;
+        font-size: 1.2rem;
+    }
+    
+    .introName {
+        font-size: 1.6rem;
+        color: #ccd6f6;
+        margin: 0;
+    }
+}
+
+/* Apply styles between 900px and 1366px */
+@media (min-width: 601px) and (max-width: 1366px) {
+    .image-1, .image-2, .image-3, .image-4 {
+        display: none;
+    }
+
+    .introTagline {
+        font-size: 5rem;
+        color: #8892b0;
+    }
+
+    .hi {
+        color: #64ffda;
+        font-size: 3rem;
+    }
+    
+    .introName {
+        font-size: 4rem;
+        color: #ccd6f6;
+        margin: 0;
+    }
 }
