@@ -21,52 +21,52 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav class="navbar">
-        <div class="navbar-content">
-          <div class="name">Dinesh Karnati</div>
-          <div class="desktopmenu">
-            <a class="desktopMenuListItem" href="#home">
+      <nav className="navbar">
+        <div className="navbar-content">
+          <div className="name">Dinesh Karnati</div>
+          <div className="desktopmenu">
+            <Link className="desktopMenuListItem" to="home" smooth={true} duration={500}>
               Home
-            </a>
-            <a class="desktopMenuListItem" href="#about">
+            </Link>
+            <Link className="desktopMenuListItem" to="about" smooth={true} duration={500}>
               About
-            </a>
-            <a class="desktopMenuListItem" href="#projects">
+            </Link>
+            <Link className="desktopMenuListItem" to="projects" smooth={true} duration={500}>
               Projects
-            </a>
-            <a class="desktopMenuListItem" href="#skills">
+            </Link>
+            <Link className="desktopMenuListItem" to="skills" smooth={true} duration={500}>
               Skills
-            </a>
-            <a class="desktopMenuListItem" href="#experience">
+            </Link>
+            <Link className="desktopMenuListItem" to="experience" smooth={true} duration={500}>
               Experience
-            </a>
-            <a class="desktopMenuListItem" href="#social-media">
+            </Link>
+            <Link className="desktopMenuListItem" to="social-media" smooth={true} duration={500}>
               Social Media
-            </a>
+            </Link>
           </div>
-          <button class="dropdown-toggle" aria-label="Toggle menu">
+          <button className="dropdown-toggle" aria-label="Toggle menu">
             &#9776;
           </button>
         </div>
-        <div class="dropdown-menu">
-          <a class="dropdownMenuItem" href="#home">
+        <div className="dropdown-menu">
+          <Link className="dropdownMenuItem" to="home" smooth={true} duration={500}>
             Home
-          </a>
-          <a class="dropdownMenuItem" href="#about">
+          </Link>
+          <Link className="dropdownMenuItem" to="about" smooth={true} duration={500}>
             About
-          </a>
-          <a class="dropdownMenuItem" href="#projects">
+          </Link>
+          <Link className="dropdownMenuItem" to="projects" smooth={true} duration={500}>
             Projects
-          </a>
-          <a class="dropdownMenuItem" href="#skills">
+          </Link>
+          <Link className="dropdownMenuItem" to="skills" smooth={true} duration={500}>
             Skills
-          </a>
-          <a class="dropdownMenuItem" href="#experience">
+          </Link>
+          <Link className="dropdownMenuItem" to="experience" smooth={true} duration={500}>
             Experience
-          </a>
-          <a class="dropdownMenuItem" href="#social-media">
+          </Link>
+          <Link className="dropdownMenuItem" to="social-media" smooth={true} duration={500}>
             Social Media
-          </a>
+          </Link>
         </div>
       </nav>
     </div>

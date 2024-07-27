@@ -2,12 +2,12 @@ import React from "react";
 import "./intro.css";
 
 import Skills from "./skills";
-
 import Experience from "./experience";
+import Projects from "./projects";
 
 const Intro = () => {
   return (
-    <div className="page-background">
+    <div className="page-background" id="home">
       <div id="intro-wrapper" className="intro-wrapper">
         <section className="intro">
           <div className="introInfo">
@@ -44,15 +44,17 @@ const Intro = () => {
           Resume
         </button>
       </div>
-      <div>
+      <div id="skills">
         <Skills />
       </div>
-      <div>
+      <div id="experience">
         <Experience />
+      </div>
+      <div id="projects">
+        <Projects />
       </div>
     </div>
   );
 };
 
 export default Intro;
-//1065
