@@ -1,7 +1,9 @@
 import React from "react";
 import "./intro.css";
 
-import About from "./about";
+import Skills from "./skills";
+
+import Experience from "./experience";
 
 const Intro = () => {
   return (
@@ -15,17 +17,17 @@ const Intro = () => {
           </div>
         </section>
 
-        <div class="image-1"> x
-          <img alt="headshot" src="./headshot.jpeg" draggable="false"/>
+        <div class="image-1">
+          <img alt="headshot" src="./headshot.jpeg" draggable="false" />
         </div>
         <div class="image-2">
-          <img alt="another pic" src="./headshot.jpeg" draggable="false"/>
+          <img alt="another pic" src="./headshot.jpeg" draggable="false" />
         </div>
         <div class="image-3">
-          <img alt="other pic pic" src="./headshot.jpeg" draggable="false"/>
+          <img alt="other pic pic" src="./headshot.jpeg" draggable="false" />
         </div>
         <div class="image-4">
-          <img alt="other pic pic" src="./headshot.jpeg" draggable="false"/>
+          <img alt="other pic pic" src="./headshot.jpeg" draggable="false" />
         </div>
       </div>
       <div className="motivational-quote">
@@ -35,11 +37,19 @@ const Intro = () => {
         </h1>
       </div>
       <div className="buttons">
-        <button className = "buttons-display" type="button">Portfolio</button>
-        <button className = "buttons-display" type="button">Resume</button>
+        <button className="buttons-display" type="button">
+          Portfolio
+        </button>
+        <button className="buttons-display" type="button">
+          Resume
+        </button>
       </div>
-
-      <About/>
+      <div>
+        <Skills />
+      </div>
+      <div>
+        <Experience />
+      </div>
     </div>
   );
 };
