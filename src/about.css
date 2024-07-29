@@ -1,0 +1,67 @@
+.about{
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-item{
+    width:40px;
+    position: relative; 
+    z-index: 1;
+    height: 40px;
+    cursor: pointer;
+}
+
+.media-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.media{
+    display:flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.about-card {
+    position: relative; 
+    border: 6px solid white;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.about-card::before, .about-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #17ffc6, #03448c);
+    z-index: 0;
+    border-radius: inherit;
+    filter: blur(2rem);
+}
+
+.about-card h2 {
+    position: relative; 
+    z-index: 1;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.about-card p {
+    position: relative; 
+    z-index: 1;
+    padding: 0.5rem 0.5rem;
+    color: black;
+    justify-content: center;
+    filter: brightness(200%);
+}

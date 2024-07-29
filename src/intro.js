@@ -1,12 +1,14 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./intro.css";
+import { Link } from "react-scroll";
 
 import Skills from "./skills";
 import Experience from "./experience";
+import About from "./about";
+
 import Projects from "./projects";
 
 const Intro = () => {
-
   return (
     <div className="page-background" id="home">
       <div id="intro-wrapper" className="intro-wrapper">
@@ -38,16 +40,31 @@ const Intro = () => {
         </h1>
       </div>
       <div className="buttons">
-        <button className="buttons-display" type="button">
+        <Link
+          className="buttons-display"
+          type="button"
+          to="about"
+          smooth={true}
+          duration={500}
+        >
           Portfolio
-        </button>
+        </Link>
+
         <button className="buttons-display" type="button">
-          Resume
+          <a className="inside-button" href="./resume.pdf" target="_blank">
+            Resume
+          </a>
         </button>
       </div>
+
+      <div id="about">
+        <About />
+      </div>
+
       <div id="skills">
         <Skills />
       </div>
+
       <div id="experience">
         <Experience />
       </div>

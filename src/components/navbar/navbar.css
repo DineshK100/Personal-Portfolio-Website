@@ -1,5 +1,3 @@
-/* Existing styles */
-
 .nav-background {
     height: 0px;
 }
@@ -28,7 +26,6 @@
 .name {
     color: aquamarine;
     font-size: 1.5rem;
-    align-items: left;
 }
 
 .navbar-content {
@@ -38,10 +35,17 @@
     width: 100%;
 }
 
+.desktopmenu-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: -100px;
+
+}
+
 .desktopmenu {
     display: flex;
     gap: 1rem;
-    margin: 0 auto;
 }
 
 .desktopMenuListItem {
@@ -110,7 +114,7 @@
 }
 
 @media (max-width: 1366px) {
-    .desktopmenu {
+    .desktopmenu-container {
         display: none;
     }
 
@@ -126,4 +130,3 @@
         display: flex;
     }
 }
-

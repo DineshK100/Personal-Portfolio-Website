@@ -55,7 +55,17 @@
     flex-direction: row;
     justify-content: center;
     gap: 100px;
-    padding-top: 5%
+    padding-top: 5%;
+    cursor: pointer;
+}
+
+.inside-button{
+    color: white;
+    text-decoration: none;
+}
+
+.inside-button:hover{
+    text-decoration: none;
 }
 
 .buttons-display {
@@ -69,6 +79,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    text-decoration: none;
 }
 
 .image-1, .image-2, .image-3, .image-4 {
