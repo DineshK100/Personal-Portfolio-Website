@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./intro.css";
 
 import Skills from "./skills";
@@ -6,6 +6,7 @@ import Experience from "./experience";
 import Projects from "./projects";
 
 const Intro = () => {
+
   return (
     <div className="page-background" id="home">
       <div id="intro-wrapper" className="intro-wrapper">
@@ -17,16 +18,16 @@ const Intro = () => {
           </div>
         </section>
 
-        <div class="image-1">
+        <div className="image-1">
           <img alt="headshot" src="./headshot.jpeg" draggable="false" />
         </div>
-        <div class="image-2">
+        <div className="image-2">
           <img alt="another pic" src="./headshot.jpeg" draggable="false" />
         </div>
-        <div class="image-3">
+        <div className="image-3">
           <img alt="other pic pic" src="./headshot.jpeg" draggable="false" />
         </div>
-        <div class="image-4">
+        <div className="image-4">
           <img alt="other pic pic" src="./headshot.jpeg" draggable="false" />
         </div>
       </div>

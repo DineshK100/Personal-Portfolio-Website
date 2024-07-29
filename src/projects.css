@@ -1,14 +1,55 @@
-.projects-heading h1 {
-    position: absolute;
-    font-size: 5rem;
-    background-color: #000117;
-    padding: 0 10px;
-    z-index: 5;
+.projects {
+    padding-bottom: 8.5rem;
+}
+.f1-project{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-left: 1rem;
+    padding-bottom: 3rem;
 }
 
-.projects-heading hr {
-    width: 80%;
-    height: 4px;
-    background: linear-gradient(to right, #009f70, #00bfcf);
-    border: none;
+.f1-container{
+    padding-left: 4rem;
+    width: 50%;
+}
+
+.f1-info{
+    padding-bottom: 2rem;
+}
+
+.f1-info h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.personal-website{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-right: 1rem;
+}
+
+.personal-container{
+    padding-right: 4rem;
+    width: 50%;
+}
+
+.personal-info{
+    padding-bottom: 2rem;
+}
+
+.personal-info h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    font-size: 3rem;
 }

@@ -3,6 +3,11 @@ import "./experience.css";
 
 function Experience() {
   return (
+    <div>
+      <div className="skills-heading">
+        <h1>Experience</h1>
+        <hr />
+      </div>
     <div className="exp">
       <div class="exp-container">
         <div class="main-timeline">
@@ -90,6 +95,7 @@ function Experience() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
