@@ -15,7 +15,7 @@ function Projects() {
 
       <div>
         <div className="f1-project">
-          <Carousel data={slides} />
+          <Carousel data={slides} className = "f1-images"/>
           <div className="f1-container">
             <div className="f1-info">
               <h2>GridMaster</h2>
@@ -35,7 +35,7 @@ function Projects() {
           
           <div className="personal-container">
             <div className="personal-info">
-              <h2>GridMaster</h2>
+              <h2>Personal Website</h2>
               <p>
                 A fully functional Formula 1 optimal fantasy team selector as
                 well as podium/grid finishes project that is coded in Python

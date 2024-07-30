@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import "./navbar.css";
 
 const Navbar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const navEl = document.querySelector(".navbar");
@@ -18,6 +20,10 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <div>
@@ -39,6 +45,7 @@ const Navbar = () => {
                 to="about"
                 smooth={true}
                 duration={500}
+                offset={-100}
               >
                 About
               </Link>
@@ -47,6 +54,7 @@ const Navbar = () => {
                 to="skills"
                 smooth={true}
                 duration={500}
+                offset={-100}
               >
                 Skills
               </Link>
@@ -55,6 +63,7 @@ const Navbar = () => {
                 to="experience"
                 smooth={true}
                 duration={500}
+                offset={-100}
               >
                 Experience
               </Link>
@@ -63,21 +72,27 @@ const Navbar = () => {
                 to="projects"
                 smooth={true}
                 duration={500}
+                offset={-100}
               >
                 Projects
               </Link>
             </div>
           </div>
-          <button className="dropdown-toggle" aria-label="Toggle menu">
+          <button
+            className="dropdown-toggle"
+            aria-label="Toggle menu"
+            onClick={toggleDropdown}
+          >
             &#9776;
           </button>
         </div>
-        <div className="dropdown-menu">
+        <div className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
           <Link
             className="dropdownMenuItem"
             to="home"
             smooth={true}
             duration={500}
+            onClick={() => setIsDropdownOpen(false)}
           >
             Home
           </Link>
@@ -86,22 +101,18 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
+            offset={-100}
+            onClick={() => setIsDropdownOpen(false)}
           >
             About
-          </Link>
-          <Link
-            className="dropdownMenuItem"
-            to="projects"
-            smooth={true}
-            duration={500}
-          >
-            Projects
           </Link>
           <Link
             className="dropdownMenuItem"
             to="skills"
             smooth={true}
             duration={500}
+            offset={-100}
+            onClick={() => setIsDropdownOpen(false)}
           >
             Skills
           </Link>
@@ -110,8 +121,20 @@ const Navbar = () => {
             to="experience"
             smooth={true}
             duration={500}
+            offset={-100}
+            onClick={() => setIsDropdownOpen(false)}
           >
             Experience
+          </Link>
+          <Link
+            className="dropdownMenuItem"
+            to="projects"
+            smooth={true}
+            duration={500}
+            offset={-100}
+            onClick={() => setIsDropdownOpen(false)}
+          >
+            Projects
           </Link>
         </div>
       </nav>

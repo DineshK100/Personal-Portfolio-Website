@@ -1,6 +1,7 @@
 .projects {
-    padding-bottom: 8.5rem;
+    padding-bottom: 11rem;
 }
+
 .f1-project{
     display: flex;
     justify-content: center;
@@ -53,3 +54,45 @@
     padding-bottom: 1rem;
     font-size: 3rem;
 }
+
+@media (max-width: 900px) {
+    .f1-project {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f1-container{
+       padding-left: 10px;
+       padding-right: 10px;
+       width: 100%;
+       padding-top: 1.5rem
+    }
+
+    .personal-website {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .personal-container{
+       padding-left: 10px;
+       padding-right: 10px;
+       width: 100%;
+       padding-top: 1.5rem;
+       padding-bottom: 1.5rem
+    }
+
+    .personal-info{
+        justify-content: center;
+    }
+
+    .personal-info h2{
+        margin-left: 50%;
+        margin-right: 45%;
+    }
+
+    .personal-info p{
+        width: 100%;
+       padding-left: 20px;
+    }
+    
+ }

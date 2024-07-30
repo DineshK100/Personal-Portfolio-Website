@@ -39,15 +39,20 @@
 }
  
 .motivational-quote {
-    
     display: flex;
     flex-direction: row;
-    font-size: 1.2em;
     color: #ccd6f6;
     text-align: center;
     justify-content: center;
     width: 100%;
     padding-top: 150px;
+}
+
+.motivational-quote h1{
+    font-size: 2.2rem;
+    font-weight: 200;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .buttons{
@@ -148,32 +153,72 @@
     display: block;
 }
 
-/* Hide images on tablets and phones */
 @media (max-width: 600px) {
-    .image-1, .image-2, .image-3, .image-4 {
+
+    .image-2, .image-3, .image-4 {
         display: none;
     }
+
+    .image-1 {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        margin-top: -50px;
+        margin-right: 10px;
+    }
+
+    .intro{
+        padding-top: 3.5rem;
+    }
+
     .introTagline {
-        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: 600;
         color: #8892b0;
     }
 
     .hi {
+        display: flex;
+        justify-content: center;
         color: #64ffda;
         font-size: 1.2rem;
+        font-weight: 500;
     }
     
     .introName {
+        display: flex;
+        justify-content: center;
         font-size: 1.6rem;
         color: #ccd6f6;
-        margin: 0;
+        font-weight: 500;
+    }
+
+    .motivational-quote h1{
+        display: flex;
+        justify-content: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top:-1.5rem;
+        padding-bottom:1.5rem;
+    }
+
+    .buttons-display {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
-/* Apply styles between 900px and 1366px */
 @media (min-width: 601px) and (max-width: 1366px) {
-    .image-1, .image-2, .image-3, .image-4 {
+     .image-2, .image-3, .image-4 {
         display: none;
+    }
+
+    .image-1 {
+        width: 20%;
+        right: 5%;
     }
 
     .introTagline {

@@ -1,5 +1,5 @@
 .exp {
-    padding-bottom: 8.5rem;
+    padding-bottom: 11rem;
 }
 
 .main-timeline {
@@ -185,6 +185,13 @@
     text-align: right
 }
 
+@media (max-width: 900px) {
+    .exp {
+     padding-left: 1rem;
+     padding-right: 1rem;
+    }
+ }
+
 @media only screen and (max-width: 991px) {
     .main-timeline .date-content {
         margin-top: 35px
@@ -250,3 +257,4 @@
         margin-bottom: 10px
     }
 }
+

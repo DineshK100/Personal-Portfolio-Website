@@ -1,6 +1,6 @@
 .skills {
     text-align: center; 
-    padding-bottom: 8.5rem;
+    padding-bottom: 11rem;
 }
 
 .skills-heading {
@@ -60,4 +60,29 @@
 
 .image-grid img:hover {
     transform: scale(1.1); 
+}
+
+@media (max-width: 600px) {
+    .skills-heading h1{
+        font-size: 3rem;
+    }
+    .skills-header h1 {
+        font-size: 2rem;
+    }
+
+    .frontend h1 {
+        font-size: 2rem;
+    }
+
+    .databases h1 {
+        font-size: 2rem;
+    }
+
+    .web h1 {
+        font-size: 2rem;
+    }
+
+    .tools h1 {
+        font-size: 2rem;
+    }
 }
