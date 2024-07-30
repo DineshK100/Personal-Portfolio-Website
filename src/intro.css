@@ -91,6 +91,7 @@
     position: absolute;
     border-radius: 50%;
     filter: brightness(75%);
+    aspect-ratio: 1/1; /* Maintain square aspect ratio */
 }
 
 .image-1 {
@@ -112,10 +113,12 @@
     height: auto;
     top: 30%;
     right: 3%;
+    transform: rotate(180deg);
+    image-rendering: optimizeQuality;
 }
 
 .image-4 {
-    width: 8%;
+    width: 10%;
     height: auto;
     top: 65%;
     right: 15%;
@@ -151,6 +154,7 @@
     height: 100%;
     border-radius: 50%;
     display: block;
+    object-fit: cover;
 }
 
 @media (max-width: 600px) {
@@ -236,4 +240,22 @@
         color: #ccd6f6;
         margin: 0;
     }
+}
+
+@media (min-width: 1367px){
+   .introTagline {
+       font-size: 5rem;
+       color: #8892b0;
+   }
+
+   .hi {
+       color: #64ffda;
+       font-size: 3rem;
+   }
+   
+   .introName {
+       font-size: 4rem;
+       color: #ccd6f6;
+       margin: 0;
+   }
 }

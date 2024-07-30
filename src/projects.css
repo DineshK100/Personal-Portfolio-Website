@@ -11,12 +11,14 @@
 }
 
 .f1-container{
+    text-align: center;
+
     padding-left: 4rem;
     width: 50%;
 }
 
 .f1-info{
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 .f1-info h2{
@@ -40,12 +42,13 @@
 }
 
 .personal-container{
+    text-align: center;
     padding-right: 4rem;
     width: 50%;
 }
 
 .personal-info{
-    padding-bottom: 2rem;
+    padding: 2rem;
 }
 
 .personal-info h2{
@@ -92,7 +95,7 @@
 
     .personal-info p{
         width: 100%;
-       padding-left: 20px;
+        padding-left: 20px;
     }
-    
+
  }

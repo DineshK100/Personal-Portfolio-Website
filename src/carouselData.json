@@ -9,7 +9,38 @@
             "alt": "Image 2"
         },
         {
-            "src": "./unnamed.png",
+            "src": "./f13.png",
+            "alt": "Image 1"
+        },
+        {
+            "src": "./f14.png",
+            "alt": "Image 1"
+        },
+        {
+            "src": "./f15.png",
+            "alt": "Image 1"
+        }
+    ],
+
+    "personal" : [
+        {
+            "src": "personal1.png",
+            "alt": "Image 1"
+        },
+        {
+            "src": "personal2.png",
+            "alt": "Image 2"
+        },
+        {
+            "src": "personal3.png",
+            "alt": "Image 1"
+        },
+        {
+            "src": "personal4.png",
+            "alt": "Image 1"
+        },
+        {
+            "src": "personal5.png",
             "alt": "Image 1"
         }
     ]

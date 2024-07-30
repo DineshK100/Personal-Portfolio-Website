@@ -1,5 +1,5 @@
 .about{
-    padding-top: 11rem;
+    padding-top: 14rem;
     padding-bottom: 11rem;
     display: flex;
     justify-content: center;
@@ -33,6 +33,7 @@
     border: 6px solid white;
     border-radius: 10px;
     width: 75%;
+    justify-content: center;
 }
 
 .about-card::before, .about-card::after {
@@ -58,10 +59,16 @@
 }
 
 .about-card p {
+    display:flex;
+    justify-content: center;
     position: relative; 
+    font-size: 1.1rem;
     z-index: 1;
     padding: 0.5rem 0.5rem;
     color: black;
     justify-content: center;
     filter: brightness(200%);
+    font-weight: 600;
+    padding-left: 2rem;;
+    padding-right: 1rem;;
 }
