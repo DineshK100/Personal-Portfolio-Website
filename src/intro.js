@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./intro.css";
 import { Link } from "react-scroll";
 
 import Skills from "./skills";
 import Experience from "./experience";
 import About from "./about";
-
 import Projects from "./projects";
 
 const Intro = () => {

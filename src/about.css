@@ -1,4 +1,4 @@
-.about{
+.about {
     padding-top: 14rem;
     padding-bottom: 11rem;
     display: flex;
@@ -6,21 +6,21 @@
     align-items: center;
 }
 
-.media-item{
-    width:40px;
+.media-item {
+    width: 40px;
     position: relative; 
     z-index: 1;
     height: 40px;
     cursor: pointer;
 }
 
-.media-item:hover{
+.media-item:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
-.media{
-    display:flex;
+.media {
+    display: flex;
     flex-direction: row;
     gap: 50px;
     justify-content: center;
@@ -30,28 +30,35 @@
 
 .about-card {
     position: relative; 
-    border: 6px solid white;
+    border: 5px solid;
     border-radius: 10px;
+    border-image-source: linear-gradient(to right, #00ff94, #00dfff, #e361ff);
+    border-image-slice: 1;
     width: 75%;
     justify-content: center;
+    z-index: 1;
+    box-shadow: 0 0 30px rgba(0, 255, 148, 0.5), 
+                0 0 30px rgba(0, 223, 255, 0.5), 
+                0 0 30px rgba(227, 97, 255, 0.5);
 }
 
-.about-card::before, .about-card::after {
+.about-card::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to top, #17ffc6, #03448c);
-    z-index: 0;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
     border-radius: inherit;
-    filter: blur(2rem);
+    border: 5px solid transparent;
+    z-index: -1;
 }
 
 .about-card h2 {
     position: relative; 
     z-index: 1;
+    color: aquamarine;
+    font-weight: 800;
     padding-top: 2rem;
     display: flex;
     justify-content: center;
@@ -59,16 +66,14 @@
 }
 
 .about-card p {
-    display:flex;
+    display: flex;
     justify-content: center;
     position: relative; 
     font-size: 1.1rem;
     z-index: 1;
     padding: 0.5rem 0.5rem;
-    color: black;
-    justify-content: center;
-    filter: brightness(200%);
+    color: white;
     font-weight: 600;
-    padding-left: 2rem;;
-    padding-right: 1rem;;
+    padding-left: 2rem;
+    padding-right: 1rem;
 }

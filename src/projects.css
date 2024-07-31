@@ -24,6 +24,7 @@
 .f1-info h2{
     display: flex;
     justify-content: center;
+    color: aquamarine;
     padding-bottom: 1rem;
     font-size: 3rem;
 }
@@ -53,6 +54,7 @@
 
 .personal-info h2{
     display: flex;
+    color: aquamarine;
     justify-content: center;
     padding-bottom: 1rem;
     font-size: 3rem;

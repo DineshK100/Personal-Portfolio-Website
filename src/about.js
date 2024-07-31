@@ -56,9 +56,8 @@ function About() {
 
         <p>
           When I'm not immersed in my studies, you'll likely find me engaging in
-          one of my many hobbies. I love playing basketball, which keeps me
-          active and teaches me the importance of teamwork and strategy. As a
-          fervent fan of Formula 1, I enjoy following the races and learning
+          one of my many hobbies. I love playing basketball, which is a superb way to stay active. As a
+          ardent fan of Formula 1, I enjoy following the races and learning
           about the technological innovations in the sport. Creating
           applications is one of my favorite pastimes. I enjoy the challenge of
           turning ideas into functional software and am always looking for new
