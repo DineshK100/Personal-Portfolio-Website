@@ -23,7 +23,7 @@ const Intro = () => {
           <img alt="headshot" src="./headshot.jpeg" draggable="false" />
         </div>
         <div className="image-2">
-          <img alt="another pic" src="./volunteering.jpg" draggable="false" />
+          <img alt="another pic" src="./sewa.jpg" draggable="false" />
         </div>
         <div className="image-3">
           <img alt="other pic pic" src="./family.png" draggable="false" />
